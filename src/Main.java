@@ -1,4 +1,5 @@
 import main.CourseGrade;
+import main.GenerateTranscript;
 import main.Transcript;
 import util.Grade;
 
@@ -18,5 +19,10 @@ public class Main {
         transcript.addCourseTaken(courseGradeCeng);
         transcript.addCourseTaken(courseGradeMe);
         System.out.println(transcript);
+
+        GenerateTranscript generateTranscript = new GenerateTranscript();
+        generateTranscript.takeInputFromUser();
+        System.out.println("-------------");
+        generateTranscript.takeInputFromFile();
     }
 }
